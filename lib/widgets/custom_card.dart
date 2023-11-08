@@ -28,14 +28,14 @@ class CustomCard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 150,
+            height: 200,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10.0),
               child: Image.asset(
-                'assets/luca_pinheiro.jpg', 
+                'assets/luca_pinheiro.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -88,6 +88,19 @@ class CustomCard extends StatelessWidget {
                 },
               ),
             ],
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _launchURL('https://twitter-home-page-react.vercel.app/');
+            },
+            child: Text('Meu Projeto 1'),
+          ),
+          SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              _launchURL('https://clinica-de-nutricao.vercel.app/');
+            },
+            child: Text('Meu Projeto 2'),
           ),
         ],
       ),

@@ -8,11 +8,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Portfólio Pessoal'),
       ),
-      body: Center(
-        child: CustomCard(
-          title: 'Luca Pinheiro',
-          description: 'Estudante de Ciência da Computação',
-          imagePath: 'assets/luca_pinheiro.jpg',
+      body: SingleChildScrollView(
+        child: Center(
+          child: CustomCard(
+            title: 'Luca Pinheiro',
+            description: 'Estudante de Ciência da Computação',
+            imagePath: 'assets/luca_pinheiro.jpg',
+          ),
         ),
       ),
     );
